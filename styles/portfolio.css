@@ -1,9 +1,61 @@
-h1 {
-  font-family: "Ubuntu", sans-serif;
-  color: blue;
+:root {
+  --primary-color: #1f6f78;
+  --heading-font: "Domine", serif;
+  --writing-font: "Mukta", sans-serif;
 }
 
+h1 {
+  font-family: var(--heading-font);
+}
+
+h2 {
+  font-family: var(--writing-font);
+}
+
+.hero h1,
+h2,
+h3,
 p {
-  font-family: "Domine", serif;
-  font-size: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  margin: 0;
+}
+
+.hero h3 {
+  font-size: 25px;
+}
+
+.hero {
+  padding: 70px 20px;
+  background-color: rgba(147, 228, 193, 0.7);
+}
+
+.branding-link {
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: white;
+  background: var(--primary-color);
+  border: solid 0.5px var(--primary-color);
+  border-radius: 8px;
+}
+
+.branding-link:hover {
+  color: #004445;
+  background-color: rgba(31, 111, 120, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation-link {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }

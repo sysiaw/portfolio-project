@@ -1,35 +1,52 @@
 :root {
   --primary-color: #1f6f78;
+  --secondary-color: #93e4c1;
   --heading-font: "Domine", serif;
-  --writing-font: "Mukta", sans-serif;
+  --default-font: "Mukta", sans-serif;
 }
 
-h1 {
+body {
+  font-family: var(--default-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
 }
 
 h2 {
-  font-family: var(--writing-font);
+  font-size: 50px;
+}
+
+p {
+  font-family: var(--default-font);
+  font-size: 18px;
+  line-height: 2;
 }
 
 .hero h1,
-h2,
-h3,
-p {
+.hero h2,
+.hero p {
   text-align: center;
 }
 
 .hero h1 {
   font-size: 90px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .hero h2 {
-  margin: 0;
+  font-size: 25px;
 }
 
-.hero h3 {
-  font-size: 25px;
+.hero p {
+  font-size: 30px;
+  margin: 0;
 }
 
 .hero {
@@ -39,12 +56,13 @@ p {
 
 .branding-link {
   text-align: center;
+  font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   padding: 15px 20px;
   color: white;
   background: var(--primary-color);
-  border: solid 0.5px var(--primary-color);
+  border: solid 2px var(--primary-color);
   border-radius: 8px;
 }
 
@@ -58,4 +76,25 @@ p {
   display: flex;
   justify-content: center;
   margin: 20px;
+}
+
+.branding-link-outline {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+  border-radius: 8px;
+}
+
+.branding-link-outline:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-description {
+  padding: 10px 60px;
 }

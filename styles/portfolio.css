@@ -5,10 +5,6 @@
   --default-font: "Mukta", sans-serif;
 }
 
-body {
-  font-family: var(--default-font);
-}
-
 h1,
 h2,
 h3,
@@ -41,12 +37,13 @@ p {
 }
 
 .hero h2 {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .hero p {
   font-size: 30px;
   margin: 0;
+  line-height: 1.5;
 }
 
 .hero {
@@ -68,7 +65,7 @@ p {
 
 .branding-link:hover {
   color: #004445;
-  background-color: rgba(31, 111, 120, 0.3);
+  background-color: transparent;
   transition: all 0.2s ease-in-out;
 }
 
@@ -96,5 +93,24 @@ p {
 }
 
 .project-description {
-  padding: 10px 60px;
+  padding: 0 60px;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .project-description {
+    padding: 30px;
+    text-align: center;
+  }
 }

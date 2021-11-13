@@ -96,6 +96,31 @@ p {
   padding: 0 60px;
 }
 
+.about-section {
+  padding: 80px 20px;
+}
+
+.about-section h1 {
+  font-size: 50px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+}
+
+.about-section p {
+  font-size: 16px;
+}
+
+.about-content {
+  margin: 80px 0 0;
+}
+
+.picture-me {
+  width: 400px;
+  margin-top: 50px;
+}
+
 @media (max-width: 900px) {
   .hero h1 {
     font-size: 50px;
@@ -112,5 +137,19 @@ p {
   .project-description {
     padding: 30px;
     text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-section h1 {
+    font-size: 40px;
+  }
+
+  .picture-me {
+    display: block;
+    margin: 50px auto;
   }
 }

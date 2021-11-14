@@ -101,7 +101,7 @@ p {
 }
 
 .about-section h1 {
-  font-size: 50px;
+  font-size: 54px;
 }
 
 .about-section h2 {
@@ -110,15 +110,17 @@ p {
 
 .about-section p {
   font-size: 16px;
+  opacity: 90%;
 }
 
 .about-content {
-  margin: 80px 0 0;
+  margin: 100px 0 0 63px;
 }
 
 .picture-me {
-  width: 400px;
-  margin-top: 50px;
+  width: 500px;
+  display: block;
+  margin: 50px auto;
 }
 
 @media (max-width: 900px) {
@@ -146,10 +148,5 @@ p {
 
   .about-section h1 {
     font-size: 40px;
-  }
-
-  .picture-me {
-    display: block;
-    margin: 50px auto;
   }
 }

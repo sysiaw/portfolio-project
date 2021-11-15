@@ -25,6 +25,33 @@ p {
   opacity: 90%;
 }
 
+nav ul {
+  padding: 0;
+  margin: 10px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+  line-height: 1.8;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav .active {
+  color: var(--primary-color);
+}
+
 .hero h1,
 .hero h2,
 .hero p {
@@ -98,7 +125,7 @@ p {
 }
 
 .content-container {
-  padding: 70px 20px;
+  padding: 50px 20px;
 }
 
 .content-container h1 {
@@ -122,6 +149,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  nav li {
+    margin: 8px;
+  }
+
   .hero h1 {
     font-size: 50px;
   }

@@ -1,6 +1,6 @@
 :root {
   --primary-color: #1f6f78;
-  --secondary-color: #93e4c1;
+  --secondary-color: #b3ecd3;
   --heading-font: "Domine", serif;
   --default-font: "Mukta", sans-serif;
 }
@@ -76,7 +76,7 @@ nav .active {
 
 .hero {
   padding: 70px 20px;
-  background-color: rgba(147, 228, 193, 0.7);
+  background-color: var(--secondary-color);
 }
 
 .branding-link {
@@ -89,12 +89,12 @@ nav .active {
   background: var(--primary-color);
   border: solid 2px var(--primary-color);
   border-radius: 9px;
+  transition: all 150ms ease-in-out;
 }
 
 .branding-link:hover {
-  color: #004445;
+  color: var(--primary-color);
   background-color: transparent;
-  transition: all 150ms ease-in-out;
 }
 
 .navigation-link {
@@ -112,12 +112,12 @@ nav .active {
   color: var(--primary-color);
   border: solid 2px var(--primary-color);
   border-radius: 9px;
+  transition: all 150ms ease-in-out;
 }
 
 .branding-link-outline:hover {
   color: white;
   background-color: var(--primary-color);
-  transition: all 150ms ease-in-out;
 }
 
 .project-description {
@@ -146,6 +146,47 @@ nav .active {
 
 .picture-me {
   border-radius: 28px;
+}
+
+footer {
+  padding: 50px 70px;
+}
+
+.contact-box {
+  padding: 30px 100px;
+  background: var(--secondary-color);
+  border-radius: 7px;
+}
+
+.contact-box-btn {
+  margin: 48px;
+}
+
+.email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+  transition: all 100ms ease-in-out;
+}
+
+.email-link:hover {
+  color: var(--secondary-color);
+}
+
+.social-links a {
+  margin: 0 20px;
+  font-size: 22px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 8px 15px;
+  border-radius: 100px;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 @media (max-width: 900px) {
